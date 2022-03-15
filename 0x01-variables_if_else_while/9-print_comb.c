@@ -1,27 +1,30 @@
 #include <stdio.h>
+
 /**
  * main - print single digit numbers
- * Description: Print all possible combinations fo single-digit numbers.
- * Numbers must be separated by commas and a space.
- * You can only use `putchar` to print to console
- * You can only use `putchar` up to four times.
- * You are not allowed to use any variable of type `char`.
- * return: 0
+ *
+ * Description: print single digit numbers with commas
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i = 0;
+	int i;
 
-	while (i < 10)
+	i = 48;
+
+	while (i < 58)
 	{
-		putchar(i + '0');
-		if (i < 9)
+		putchar(i);
+		if (i != 57)
 		{																putchar(44);
-			putchar(32);
-		}
+																		putchar(32);													}
 		i++;
 	}
-	putchar('\n');
+
+
+	putchar(10);
 
 	return (0);
 }
