@@ -14,7 +14,10 @@
 
 struct dog;
 
-struct dog 
+/**
+ * dog_n - typedef for struct dog
+ */
+typedef struct dog dog_n; 
 {
 	char *name;
 	float age;
@@ -22,5 +25,8 @@ struct dog
 };
 
 void doggie(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_n *new_dog(char *name, float age, char *owner);
+void free_dog(dog_n *d); 
 
 #endif
